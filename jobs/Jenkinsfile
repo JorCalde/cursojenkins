@@ -14,7 +14,7 @@ pipeline {
      
       steps {
           script {			
-            "echo 'hola mundo'"
+            echo 'hola mundo'
         }
       }
     }
@@ -22,14 +22,14 @@ pipeline {
   post {
       always {          
           deleteDir()
-           "echo 'fase always'"
+           echo 'fase always'
       }
       success {
-            "echo 'fase success'"
+            echo 'fase success'
         }
 
       failure {
-            "echo 'fase failure'"
+            echo 'fase failure'
       }
       
   }
